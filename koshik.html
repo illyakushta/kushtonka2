@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark"">
+                <div class="container-fluid d-flex justify-content-between align-items-center">
+                  <!-- Логотип -->
+                  <a class="navbar-brand whitey" href="/index.html">Kushtonka</a>
+                  
+                  <!-- Кнопка для адаптивного меню -->
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  
+                  <!-- Гнучке меню -->
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-wrap">
+                      <li class="nav-item">
+                        <a class="nav-link texty" href="#">Товари</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link texty" href="#">Про нас</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link texty" href="#">Підтримка</a>
+                      </li>
+                    </ul>
+                    
+                    <!-- Поле пошуку -->
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Шукати..." aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Пошук</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </header>
+        <main style="margin-left: 50px; margin-bottom: 100px;">
+          <p class="text36 resultCART" style="margin-top: 70px;">Ваш кошик</p>
+          <!-- <div class="carditems">
+            <p class="text36" style="margin-left: 10px;">phone</p>
+            <div>
+            <p class="text24">Кількість:</p>
+              <input class="quantity" type="number" min="1" value="1">
+            </div>
+            <p class="text24" style="margin-right: 10px;">0 грн</p>
+          </div>
+          <p class="text20" style="margin: 20px; margin-bottom: 20px;">Сума замовлення: 0 грн.</p> -->
+          <a href="" class="text20 itembuy" style="margin-left: 10px;">Оформити замовлення</a>
+        </main>
+        <footer>
+            <p class="text48 cen">Logika IT School © 2024</p>
+          <p class="text48 cen">Релізний проєкт Кушти Іллі</p>
+        </footer>
+    </body>
+    <script src="./koshik.js"></script>
+</html>

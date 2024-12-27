@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <header>
+          <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark"">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+              <!-- Логотип -->
+              <a class="navbar-brand whitey" href="koshik.html">Kushtonka</a>
+              
+              <!-- Кнопка для адаптивного меню -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+              <!-- Гнучке меню -->
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-wrap">
+                  <li class="nav-item">
+                    <a class="nav-link texty" href="#items">Товари</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link texty" href="#about">Про нас</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link texty" href="#support" onclick="document.querySelector('.modal').style.display = 'block'">Підтримка</a>
+                  </li>
+                </ul>
+                
+                <!-- Поле пошуку -->
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Шукати..." aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Пошук</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </header>
+        <main>
+          <div class="head">
+            <p class="text36">Онлайн-Магазин Kushtonka</p>
+            <p class="text24">Ваш провідник у світі ґаджетів</p>
+            <a href="koshik.html" class="koshik-button">Кошик</a>
+          </div>
+          <p class="text36 cen" style="margin: 10px;" id="items">Товари</p>
+          <div class="catalog">
+            <div class="item1 items">
+              <img src="/images/phone1.png" width="200px" height="200px" style="margin-bottom: 5px;">
+              <p class="text24" style="margin-bottom: 10px;">Oppo A53</p>
+              <p class="text20">лорем ипсум фигня безбезебзебзе зипзипзипзипзип кароче крутий телефон купляйте</p>
+              <p class="text20">25999$</p>
+              <a href="" class="itembuy">Купити</a>
+            </div>
+            <div class="item2 items">
+              <img src="/images/phone2.png" width="200px" height="200px" style="margin-bottom: 5px;">
+              <p class="text24" style="margin-bottom: 10px;">Samsung A53</p>
+              <p class="text20" >лорем ипсум фигня безбезебзебзе зипзипзипзипзип кароче крутий телефон купляйте</p>
+              <p class="text20">37999$</p>
+              <a onclick="" class="itembuy">Купити</a>
+            </div>
+            <div class="item3 items">
+              <img src="/images/phone3.png" width="200px" height="200px" style="margin-bottom: 5px;">
+              <p class="text24" style="margin-bottom: 10px;">Google pixel 7 pro</p>
+              <p class="text20">лорем ипсум фигня безбезебзебзе зипзипзипзипзип кароче крутий телефон купляйте</p>
+              <p class="text20">21999$</p>
+              <a href="" class="itembuy">Купити</a>
+            </div>
+          </div>
+          <div class="info" id="about">
+            <div class="textinfo">
+              <p class="text32">Kushtonka - ваш партнер у світі ґаджетів</p>
+              <p class="text20">Ласкаво просимо до Kushtonka, вашого надійного онлайн магазину для найсучасніших гаджетів та електроніки! У нас ви знайдете найновіші та найпопулярніші технологічні новинки, які зроблять ваше життя зручнішим і цікавішим.</p>
+            </div>
+          <img src="/images/img2.jpg" width="600px" height="400px">
+          </div>
+          <div class="modal" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Виникли запитання?</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="document.querySelector('.modal').style.display = 'none'"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Будь ласка, залиште ваше повідомлення і ми зв'яжемося з Вами.</p>
+                  <input type="text" placeholder="Номер телефону">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Відправити</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer>
+          <p class="text48 cen">Logika IT School © 2024</p>
+          <p class="text48 cen">Релізний проєкт Кушти Іллі</p>
+        </footer>      
+    </body>
+    <script src="./index.js"></script>
+</html>
